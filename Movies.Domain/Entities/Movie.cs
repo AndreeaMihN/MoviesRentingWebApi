@@ -19,6 +19,7 @@ namespace Movies.Domain.Entities
         public int NumberInStock { get; set; }
         public decimal DailyRentalRate { get; set; }
         public int GenreId { get; set; }
+        public Genre Genre { get; set; }
         public ICollection<Rental> Rental { get; set; }
 
     }
